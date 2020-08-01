@@ -1,0 +1,51 @@
+@charset "utf-8";
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url(pictures/background1.jpg);
+background-repeat: none;
+}
+form {
+  border: 3px solid #b422ad;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 8%;
+  background: white;
+  padding: 10px;
+}
+.content h3{
+  text-align: center;
+}
+.log{
+  padding: 10px;
+}
+
+/*To style the heading*/
+.log h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+/*To set the style for email and password field*/
+.log input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-size: medium;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*To set style for the submit button*/
+.log input[type=submit]{
+  background-color: #b12b94;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
