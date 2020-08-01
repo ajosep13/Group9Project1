@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url(pictures/background1.jpg);
+background-repeat: none;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2%;
+  background: white;
+  padding: 30px;
+}
+.log{
+    padding: 10px;
+  }
+.log h3{
+  text-align: center;
+}
+
+.log h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.log img { 
+    width:100%;
+    text-align:center; 
+    height:auto; 
+} 
+
+table {
+  border-spacing: 0.5rem;
+}
+td {
+  padding: 0.5rem;
+}
+/*To set different column color for the table in about.html page*/
+td:nth-child(1) { background: hsl(275, 50%, 50%); }
+td:nth-child(2) { background: hsl(285, 60%, 50%); }
+td:nth-child(3) { background: hsl(295, 70%, 50%); }
+td:nth-child(4) { background: hsl(305, 80%, 50%); }
+td:nth-child(5) { background: hsl(315, 90%, 50%); }
+td:nth-child(6) { background: hsl(325, 99%, 50%); }
