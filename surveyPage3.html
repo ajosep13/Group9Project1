@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" type="text/css" href="styleSurvey.css">
+    </head>
+    <body>
+        <div class="content">
+        <!--This page is the third part of survey. Here we have multiple choice question, open ended and closed questions. 
+            This page will redirect to about page and there is also option to go back to the previous page.
+          This page is created with the help of ordered list, radio button, checkbox and text box. 
+        -->
+        <div class="log">
+        <form action="about.html">
+            <h3>Page 3</h3>
+            <ol start="11">
+
+                <li>
+                    Which features you like the most?<br><br>
+                    <input type="checkbox" name="ch1" checked>Camera<br>
+                    <input type="checkbox" name="ch1" >Display<br>
+                    <input type="checkbox" name="ch1" >Clarity<br>
+                    <input type="checkbox" name="ch1" >Audio<br>
+                    <input type="checkbox" name="ch1" >None<br>
+                    <input type="checkbox" name="ch1" >Other<br>
+                </li>
+                <li>
+               Which important features are we missing?<br><br>
+               <input type="checkbox" name="ch2" checked>Creativity<br>
+               <input type="checkbox" name="ch2" >Quality<br>
+               <input type="checkbox" name="ch2" >Ease of use<br>
+               <input type="checkbox" name="ch2" >Budget friendliness<br>
+               <input type="checkbox" name="ch2" >None<br>
+               <input type="checkbox" name="ch2" >Other<br>
+                   
+                </li>
+                <li>
+                How likely are you to replace the current product with new product?<br><br>
+                <input type="radio" name="r13" required>Extremely likey<br>
+                <input type="radio" name="r13" required>Very likely<br>
+                <input type="radio" name="r13" required>Somewhat likely<br>
+                <input type="radio" name="r13" required>Not likely at all<br>
+                
+                  
+                </li>
+                
+                <li>
+                    What would you like to see in our product in future?<br><br>
+                    <input type="text" name="t14" required><br>
+                </li>
+                <li>
+                    How innovative is the product?<br><br>
+                    <input type="text" name="t15" required><br>
+                </li>
+            </ol>
+            <a href="surveyPage2.html"><button type="button" id="prev">Previous</button></a>
+            <input type="Submit" value="Submit">
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
