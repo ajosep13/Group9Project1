@@ -1,0 +1,46 @@
+<html>
+    <head>
+            <title>Sign-In</title>
+            <link rel="stylesheet" type="text/css" href="stylesign.css">
+    </head>
+    <body>
+        <div class="content">
+        <form action="login.html" method="POST">
+            <div class="log">
+                <a href="signUp.html"><img src="pictures/back.png"></a>
+            <h1>Sign Up</h1>
+            <!--Here we collect the address of the user, some fields are kept mandatory while others are kept optional-->
+            <fieldset>
+                <legend><h1>Address</h1></legend>
+                    <label for="stno">Street No:</label>
+                    <input type="text" id="stno" name="stno" required><br><br>
+                    <label for="stname">Street Name:</label>
+                    <input type="text" id="stname" name="stname" required>
+                     <br><br>
+                
+                    <label for="complement">Complement:</label>
+                    <input type="text" id="complement" name="complement">
+                    <br><br>
+                
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <br><br>
+                    
+                    <label for="pro">Province/State:</label>
+                    <input type="text" id="pro" name="pro"><br><br>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required><br><br>
+                    <label for="zip">Postal code/ZIP:</label>
+                    <input type="text" id="zip" name="zip"><br><br>
+                    <br><br>
+                    <!--After submitting the page it will be redirected to login.html page-->
+                    <input type="Submit" name="Register" value="Register">
+            </fieldset>
+
+            </div>
+            <!--If user want to cancel the registration then they can go back to the log in page without giving their details-->
+        <a href="login.html">Back to Home</a>
+        </form>
+        </div>
+    </body>
+</html>
