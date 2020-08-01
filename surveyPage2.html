@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" type="text/css" href="styleSurvey.css">
+    </head>
+    <body>
+        <div class="content">
+        
+        <div class="log">
+          <!--This page is the second part of survey. This questions are mainly yes or no questions. 
+            If the user choose No as the option then specify text box wil come so that user can express their opinion. 
+            This page will redirect to next page of survey and there is also option to go back to the previous page.
+          This page is created with the help of ordered list, radio button and text box. 
+          It is also using a javascript code to display the text box-->
+        <form action="surveyPage3.html">
+        <h3>Page 2</h3>
+            <ol start="6">
+
+                <li>Do you think the product worth the cost you paid for it?<br><br>
+                
+                    <input type="radio" name="r6" id="r6" onclick="displayTextSix('y')" required>Yes<br>
+                    <input type="radio" name="r6" id="r6" onclick="displayTextSix('n')" required>No<br>
+                    <div id="hidden6" style="display: none">
+                        <label for="six">Specify: </label>
+                        <input type="text" name="six" id="six">
+                    </div>
+                    <br>
+                </li>
+                <li>
+                Would you like to purchase our product agin?<br><br>
+                
+                    <input type="radio" name="r7" id="r7" onclick="displayTextSeven('y')" required>Yes<br>
+                    <input type="radio" name="r7" id="r7" onclick="displayTextSeven('n')" required>No<br>
+                    <div id="hidden7" style="display: none">
+                        <label for="seven">Specify: </label>
+                        <input type="text" name="seven" id="seven">
+                    </div>
+                    <br>
+                </li>
+                <li>
+                Would you recommend our product to anyone?<br><br>
+                
+                    <input type="radio" name="r8" id="r8" onclick="displayTextEight('y')" required>Yes<br>
+                    <input type="radio" name="r8" id="r8" onclick="displayTextEight('n')" required>No<br>
+                    <div id="hidden8" style="display: none">
+                        <label for="eight">Specify: </label>
+                        <input type="text" name="eight" id="eight">
+                    </div>
+                    <br>
+                </li>
+                <li>
+                Does this product meet the your needs?<br><br>
+                
+                    <input type="radio" name="r9" id="r9" onclick="displayTextNine('y')" required>Yes<br>
+                    <input type="radio" name="r9" id="r9" onclick="displayTextNine('n')" required>No<br>
+                    <div id="hidden9" style="display: none">
+                        <label for="nine">Specify: </label>
+                        <input type="text" name="nine" id="nine">
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    Does the new display features meet your expectation?<br><br>
+
+                    <input type="radio" name="r10" id="r10" onclick="displayTextTen('y')" required>Yes<br>
+                    <input type="radio" name="r10" id="r10" onclick="displayTextTen('n')" required>No<br>
+                    <div id="hidden10" style="display: none">
+                        <label for="ten">Specify: </label>
+                        <input type="text" name="ten" id="ten">
+                    </div>
+                    
+                </li>
+            </ol>
+            <a href="surveyPage1.html"><button type="button" id="prev">Previous</button></a>
+            <input type="Submit" value="Next">
+            <br>
+            
+        </form>
+    </div>
+</div>
+      <!--Javascript code to display textbox on chooseing No as the option-->
+        <script>
+            function displayTextSix(s) {
+              var hide = document.getElementById("hidden6");
+              if (s == "n")
+               {
+                hide.style.display = "block";
+              } 
+              else 
+              {
+                hide.style.display = "none";
+              }
+            }
+            function displayTextSeven(s) {
+              var hide = document.getElementById("hidden7");
+              if (s == "n")
+               {
+                hide.style.display = "block";
+              } 
+              else 
+              {
+                hide.style.display = "none";
+              }
+            }
+            function displayTextEight(s) {
+              var hide = document.getElementById("hidden8");
+              if (s == "n")
+               {
+                hide.style.display = "block";
+              } 
+              else 
+              {
+                hide.style.display = "none";
+              }
+            }
+            function displayTextNine(s) {
+              var hide = document.getElementById("hidden9");
+              if (s == "n")
+               {
+                hide.style.display = "block";
+              } 
+              else 
+              {
+                hide.style.display = "none";
+              }
+            }
+            function displayTextTen(s) {
+              var hide = document.getElementById("hidden10");
+              if (s == "n")
+               {
+                hide.style.display = "block";
+              } 
+              else 
+              {
+                hide.style.display = "none";
+              }
+            }
+            </script>
+        
+    </body>
+</html>
