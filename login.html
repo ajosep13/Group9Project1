@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log-In</title>
+        <link rel="stylesheet" type="text/css" href="stylelog.css">
+        
+        <!-- Javascript code to setup login page with the password Adm1n-->
+       <!-- <script>
+            function CheckLogin()
+            {
+                pwd = document.getElementById("loginPwd").value;
+            
+                if(pwd == 'Adm1n'){
+                    return true;}
+                    else{
+                        alert("Password is wrong");
+                        return false;
+                    }
+            }
+        </script>-->
+    </head>
+    <body>
+        <div class="content">
+            <form name="form1" action="about.html" method="post" onsubmit="return CheckLogin()">
+            <div class="log">
+                <!--To enter the login credentials-->
+                <h1>Log-In</h1>
+                <label for="loginMail">Email:</label>
+                <br>
+                <!--To enter username-->
+                <input type="email" name="loginMail" id="loginMail" required>    
+                <br><br>
+                <label for="loginpwd">Password:</label>
+                <br>
+                <!--To enter password-->
+                <input type="password" name="loginPwd" id="loginPwd" required>   
+                <br><br>
+                <input type="submit" name="Log In" value="Log In">
+            </div>
+                <!--A link for new user to setup the account-->
+            <h3>New User?<a href="signUp.html"> Register Now</a></h3>
+                <!--A link for users if they forgot their password and username. Currently the link won't take to anywhere-->
+                <fieldset id="recover">
+                <legend>Recover access</legend>
+                <span class="fUser"><h4>Forgot <a href="#">user?</a></h4></span>
+                <span class="fPwd"><h4>Forgot <a href="#">password?</a></h4></span>
+            </fieldset>
+        </form>
+        </div>
+    </body> 
+</html>
