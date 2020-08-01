@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Sign-Up</title>
+    <link rel="stylesheet" type="text/css" href="stylesign.css">
+    <script>
+function CheckPassword() 
+{ 
+    pwd = document.getElementById("pwd").value;
+    cpwd = document.getElementById("cpwd").value;
+    
+var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
+
+// Checking whether Password and confirm password fields are same 
+
+if(pwd == cpwd){
+
+// Checking whether entered password contains Capital Letter, Samll Letter and a number
+if(pwd.match(passw)) 
+{ 
+// If matches the pattern return true
+return true;
+}
+else
+{ 
+alert('Password should be a combination of uppercase, lowercase and numeric characters and also should be atleast 8 characters length !')
+return false;
+}
+}
+else{
+    alert("Password do not match");
+    return false;
+}
+}
+    </script>
+</head>
+<body>
+<div class="content">
+  <!--This page will collect details form the new user. All the fields are set to mandatory field here so we used required  in each form elements-->
+<form name="form1" action="signUp1.html" method="post" onsubmit="return CheckPassword()">
+<div class="log">
+    <a href="login.html"><img src="pictures/back.png"></a>
+<h1>Sign Up</h1>
+<label for="mail">Email:</label> 
+<input type="email" id="mail" name="mail" placeholder="Email" pattern="[A-Za-z0-9]*@[A-Za-z]*.[A-Za-z]*" required>
+<br><br>
+
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="pwd" placeholder="Password" required>
+<br><br>
+
+<label for="cpwd">Confirm Password:</label>
+<input type="password" id="cpwd" name="cpwd" placeholder="Confirm Password" required>
+<br><br>
+
+<label for="fname">Full Name:</label>
+<input type="text" id="fname" name="fname" required>
+ <br><br>
+
+<label for="bday">Birthday:</label>
+<input type="date" id="bday" name="bday" required>
+<br><br>
+<!--Next button will redirect to the next page of sign up-->
+<input type="Submit" name="Next" value="Next"/>
+<!--A link to go back to the log in page-->
+<a href="login.html">Back to Home</a>
+</div>
+</form>
+</div>
+</body>
+</html>s
